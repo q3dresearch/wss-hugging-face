@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hugging Face Adoption History (wss-hugging-face)</title>
+<meta name="description" content="Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Hugging Face Adoption History (wss-hugging-face)",
+  "description": "Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.",
+  "url": "https://github.com/neldivad/wss-hugging-face",
+  "license": "CC-BY-4.0",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "git-scraping",
+    "open-data",
+    "point-in-time-data",
+    "dataset",
+    "hugging-face"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "neldivad",
+      "url": "https://github.com/neldivad"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://github.com/neldivad/wss-hugging-face/tree/main/data"
+    }
+  ],
+  "temporalCoverage": "2026-08-31/2026-09-05",
+  "isBasedOn": [
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/datasets?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/datasets?sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/datasets?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/datasets?sort=trendingScore&direction=-1&limit=1000&expand[]=trendingScore&expand[]=downloads&expand[]=likes&expand[]=createdAt"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/models?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=pipeline_tag"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/models?pipeline_tag=text-generation&sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=pipeline_tag&expand[]=library_name&expand[]=tags"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/models?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=pipeline_tag"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=1000&expand[]=trendingScore&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=pipeline_tag&expand[]=library_name"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/daily_papers?limit=100"
+    }
+  ]
+}
+</script>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+         Helvetica, Arial, sans-serif; max-width: 46rem; margin: 0 auto;
+         padding: 2.5rem 1.25rem; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: .4rem .6rem;
+            border-bottom: 1px solid rgba(128,128,128,.3); font-size: .92rem; }
+  code { font-size: .9em; }
+  .cov { font-size: .95rem; }
+  footer { margin-top: 2.5rem; font-size: .85rem; opacity: .75; }
+</style>
+</head>
+<body>
+<h1>Hugging Face Adoption History (wss-hugging-face)</h1>
+<p>Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.</p>
+<p class="cov">History held: <strong>2026-08-31</strong> to <strong>2026-09-05</strong>.</p>
+
+<h2>What is captured</h2>
+<table>
+  <thead><tr><th>source</th><th>publisher</th><th>cadence</th><th>terms</th></tr></thead>
+  <tbody>
+      <tr><td><code>hf.datasets.newest</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.top-downloads</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.top-likes</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.trending</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.newest</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.text-generation</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.top-downloads</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.top-likes</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.trending</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.papers.daily</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+  </tbody>
+</table>
+
+<h2>Using it</h2>
+<p>Derived tables are CSV under <code>data/</code> in
+<a href="https://github.com/neldivad/wss-hugging-face">the repository</a>; the bytes they came from are under
+<code>raw/</code>, and <code>SOURCES.md</code> lists every source URL.</p>
+<p>Every observation carries <code>source_id</code> and <code>raw_ref</code>. The
+matching manifest row holds that <code>raw_ref</code> with the URL, the fetch
+timestamp and a SHA-256 of exactly what came back, so any number here traces to
+the bytes it came from.</p>
+<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/neldivad/wss-hugging-face">https://github.com/neldivad/wss-hugging-face</a>, accessed 2026-09-05.</p>
+
+<footer>
+<p>Repository code and captured data are licensed separately. This dataset is
+offered under CC-BY-4.0; each publisher's own terms govern their material and
+are listed per source above. Generated by <code>wss datapage</code> — do not edit
+by hand.</p>
+</footer>
+</body>
+</html>
