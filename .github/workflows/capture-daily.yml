@@ -12,13 +12,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: fleet-commits-daily
+  group: fleet-commits
   cancel-in-progress: false
 
 env:
   CADENCE: daily
   SHARDS: "20" # matrix cap is 256 jobs/run — aim for ~20 jobs of ~50 sources
-  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.5.4"
+  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.5.7"
 
 jobs:
   plan:
