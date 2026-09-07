@@ -1,7 +1,7 @@
 # Field shape verified against the live API on 2026-08-31 (see git history).
 source_id: hf.models.top-likes
 status: active
-cadence: daily
+cadence: weekly
 schema_id: adoption.v1
 
 publisher: Hugging Face

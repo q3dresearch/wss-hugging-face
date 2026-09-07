@@ -3,7 +3,7 @@
 This repo is a **capture fleet**, driven entirely by its registry. No
 workflow names a source; a handful of scheduled workflows shard whatever
 `registry/` marks active. The engine is
-[wss](https://github.com/neldivad/wss-engine), pinned to one version in
+[wss](https://github.com/q3dresearch/wss-engine), pinned to one version in
 `requirements.txt` and in every workflow's `ENGINE_SPEC`.
 
 ## The daily cycle
@@ -61,7 +61,7 @@ triage is a weekly read of that file. To re-enable: fix the cause, set
 ```bash
 python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt      # or, against a sibling checkout: pip install -e ../wss-engine
-export WSS_CONTACT="neldivad +https://github.com/neldivad/wss-hugging-face"
+export WSS_CONTACT="neldivad +https://github.com/q3dresearch/wss-hugging-face"
 
 wss validate
 wss doctor hf.models.text-generation
@@ -72,8 +72,8 @@ wss health --dry-run
 
 ## Standing up your own fork
 
-This repo runs live at `neldivad/wss-hugging-face` against the engine at
-[neldivad/wss-engine](https://github.com/neldivad/wss-engine). To run your
+This repo runs live at `q3dresearch/wss-hugging-face` against the engine at
+[q3dresearch/wss-engine](https://github.com/q3dresearch/wss-engine). To run your
 own copy:
 
 1. Fork (or push) **both repos under one GitHub owner** — the workflows

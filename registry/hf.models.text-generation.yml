@@ -6,7 +6,7 @@
 # see "Before enabling" in README.md.
 source_id: hf.models.text-generation
 status: active
-cadence: daily
+cadence: weekly
 schema_id: adoption.v1
 
 publisher: Hugging Face

@@ -1,11 +1,11 @@
 # Instantiated from the engine's canonical template (examples/workflows/).
 # There is never a workflow per source: this shards whatever the registry
 # marks active at this cadence. Adding a source touches nothing here.
-name: capture-daily
+name: capture-weekly
 
 on:
   schedule:
-    - cron: "10 22 * * *" # off the hour — GitHub's scheduler is contended at :00
+    - cron: "40 23 * * 1"  # weekly, Monday # off the hour — GitHub's scheduler is contended at :00
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ concurrency:
 env:
   CADENCE: daily
   SHARDS: "20" # matrix cap is 256 jobs/run — aim for ~20 jobs of ~50 sources
-  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.5.9"
+  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.0"
 
 jobs:
   plan:
