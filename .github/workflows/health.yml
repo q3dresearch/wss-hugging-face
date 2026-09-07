@@ -6,7 +6,7 @@ name: health
 
 on:
   schedule:
-    - cron: "40 23 * * *" # matches the fastest capture cadence
+    - cron: "40 23 * * 1" # Monday, after capture # matches the fastest capture cadence
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.3"
+  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.4"
 
 jobs:
   health:
