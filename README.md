@@ -6,15 +6,15 @@
 
 <div align="center">
 
-  <a href="https://github.com/neldivad/wss-hugging-face/actions/workflows/capture-daily.yml"><img alt="capture status" src="https://img.shields.io/github/actions/workflow/status/neldivad/wss-hugging-face/capture-daily.yml?label=capture&style=flat-square"></a>
-  <a href="https://github.com/neldivad/wss-hugging-face/commits"><img alt="last capture" src="https://img.shields.io/github/last-commit/neldivad/wss-hugging-face?label=last%20capture&style=flat-square"></a>
-  <a href="https://github.com/neldivad/wss-hugging-face/blob/main/LICENSE"><img alt="licence" src="https://img.shields.io/github/license/neldivad/wss-hugging-face?style=flat-square"></a>
-  <a href="https://github.com/neldivad/wss-hugging-face"><img alt="stars" src="https://img.shields.io/github/stars/neldivad/wss-hugging-face?style=social"></a>
+  <a href="https://github.com/q3dresearch/wss-hugging-face/actions/workflows/capture-daily.yml"><img alt="capture status" src="https://img.shields.io/github/actions/workflow/status/q3dresearch/wss-hugging-face/capture-daily.yml?label=capture&style=flat-square"></a>
+  <a href="https://github.com/q3dresearch/wss-hugging-face/commits"><img alt="last capture" src="https://img.shields.io/github/last-commit/q3dresearch/wss-hugging-face?label=last%20capture&style=flat-square"></a>
+  <a href="https://github.com/q3dresearch/wss-hugging-face/blob/main/LICENSE"><img alt="licence" src="https://img.shields.io/github/license/q3dresearch/wss-hugging-face?style=flat-square"></a>
+  <a href="https://github.com/q3dresearch/wss-hugging-face"><img alt="stars" src="https://img.shields.io/github/stars/q3dresearch/wss-hugging-face?style=social"></a>
 
 </div>
 
 <p align="center">
-  <sub>fleet: <a href="https://github.com/neldivad/wss-engine">engine</a> · <strong>hugging face</strong> · <a href="https://github.com/neldivad/wss-openrouter">openrouter</a> · <a href="https://github.com/neldivad/wss-cloud-footprint">cloud footprint</a> · <a href="https://github.com/neldivad/wss-mining-pipeline">mining</a> · <a href="https://github.com/neldivad/wss-forest-harvest">forest</a> · <a href="https://github.com/neldivad/wss-food-trace">food</a></sub>
+  <sub>fleet: <a href="https://github.com/q3dresearch/wss-engine">engine</a> · <strong>hugging face</strong> · <a href="https://github.com/q3dresearch/wss-openrouter">openrouter</a> · <a href="https://github.com/q3dresearch/wss-cloud-footprint">cloud footprint</a> · <a href="https://github.com/q3dresearch/wss-mining-pipeline">mining</a> · <a href="https://github.com/q3dresearch/wss-forest-harvest">forest</a> · <a href="https://github.com/q3dresearch/wss-food-trace">food</a></sub>
 </p>
 
 The API shows a rolling 30-day download count and a running total. There is no
@@ -70,7 +70,7 @@ keywords, so trend analysis needs no PDF downloads.
 **Reading this data needs nothing** — no key, no account, not even a clone:
 
 ```bash
-B=https://raw.githubusercontent.com/neldivad/wss-hugging-face/main/derived/observations
+B=https://raw.githubusercontent.com/q3dresearch/wss-hugging-face/main/derived/observations
 duckdb -c "SELECT * FROM read_csv_auto('$B/2026-09.csv') LIMIT 5"
 ```
 
@@ -93,7 +93,7 @@ Coverage dates live in [health/health.csv](health/health.csv); more detail in
 [docs/data-layout.md](docs/data-layout.md).
 
 Captured daily at 22:10 UTC by the
-[wss](https://github.com/neldivad/wss-engine) engine. No workflow names a
+[wss](https://github.com/q3dresearch/wss-engine) engine. No workflow names a
 source.
 
 ## Contributing
