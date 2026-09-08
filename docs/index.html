@@ -114,6 +114,22 @@
 <p>Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.</p>
 <p class="cov">History held: <strong>2026-08-31</strong> to <strong>2026-09-08</strong>.</p>
 
+
+<h2>Findings</h2>
+<p>Figures are rebuilt from the derived tables on every run; each one names the entities it is about so it can be acted on without a further query.</p>
+  <figure>
+    <a href="charts/adoption-curves.svg"><img src="charts/adoption-curves.svg" alt="Adoption curves" loading="lazy"></a>
+    <figcaption><strong>Adoption curves</strong> — Line chart of trailing 30-day downloads per model over time on a log scale, one line per model.</figcaption>
+  </figure>
+  <figure>
+    <a href="charts/leaderboard.svg"><img src="charts/leaderboard.svg" alt="Most downloaded text-generation models" loading="lazy"></a>
+    <figcaption><strong>Most downloaded text-generation models</strong> — Horizontal bar chart of the most downloaded text-generation models on the Hugging Face Hub, trailing 30-day downloads.</figcaption>
+  </figure>
+  <figure>
+    <a href="charts/papers-in-production.svg"><img src="charts/papers-in-production.svg" alt="Papers that actually shipped" loading="lazy"></a>
+    <figcaption><strong>Papers that actually shipped</strong> — Ranked bar chart of research papers by how many of the top 1,000 Hugging Face models implement them.</figcaption>
+  </figure>
+
 <h2>What is captured</h2>
 <table>
   <thead><tr><th>source</th><th>publisher</th><th>cadence</th><th>terms</th></tr></thead>
