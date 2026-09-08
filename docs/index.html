@@ -11,7 +11,7 @@
   "@type": "Dataset",
   "name": "Hugging Face Adoption History (wss-hugging-face)",
   "description": "Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.",
-  "url": "https://github.com/neldivad/wss-hugging-face",
+  "url": "https://github.com/q3dresearch/wss-hugging-face",
   "license": "CC-BY-4.0",
   "isAccessibleForFree": true,
   "keywords": [
@@ -26,16 +26,21 @@
       "@type": "Person",
       "name": "neldivad",
       "url": "https://github.com/neldivad"
+    },
+    {
+      "@type": "Person",
+      "name": "q3dresearch",
+      "url": "https://github.com/q3dresearch"
     }
   ],
   "distribution": [
     {
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://github.com/neldivad/wss-hugging-face/tree/main/data"
+      "contentUrl": "https://github.com/q3dresearch/wss-hugging-face/tree/main/data"
     }
   ],
-  "temporalCoverage": "2026-08-31/2026-09-05",
+  "temporalCoverage": "2026-08-31/2026-09-08",
   "isBasedOn": [
     {
       "@type": "Dataset",
@@ -107,34 +112,34 @@
 <body>
 <h1>Hugging Face Adoption History (wss-hugging-face)</h1>
 <p>Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.</p>
-<p class="cov">History held: <strong>2026-08-31</strong> to <strong>2026-09-05</strong>.</p>
+<p class="cov">History held: <strong>2026-08-31</strong> to <strong>2026-09-08</strong>.</p>
 
 <h2>What is captured</h2>
 <table>
   <thead><tr><th>source</th><th>publisher</th><th>cadence</th><th>terms</th></tr></thead>
   <tbody>
-      <tr><td><code>hf.datasets.newest</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.datasets.top-downloads</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.datasets.top-likes</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.datasets.trending</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.models.newest</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.models.text-generation</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.models.top-downloads</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.models.top-likes</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.models.trending</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
-      <tr><td><code>hf.papers.daily</code></td><td>Hugging Face</td><td>daily</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.newest</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.top-downloads</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.top-likes</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.datasets.trending</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.newest</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.text-generation</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.top-downloads</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.top-likes</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.models.trending</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
+      <tr><td><code>hf.papers.daily</code></td><td>Hugging Face</td><td>weekly</td><td>Hub metadata via public API; see https://huggingface.co/terms-of-service</td></tr>
   </tbody>
 </table>
 
 <h2>Using it</h2>
 <p>Derived tables are CSV under <code>data/</code> in
-<a href="https://github.com/neldivad/wss-hugging-face">the repository</a>; the bytes they came from are under
+<a href="https://github.com/q3dresearch/wss-hugging-face">the repository</a>; the bytes they came from are under
 <code>raw/</code>, and <code>SOURCES.md</code> lists every source URL.</p>
 <p>Every observation carries <code>source_id</code> and <code>raw_ref</code>. The
 matching manifest row holds that <code>raw_ref</code> with the URL, the fetch
 timestamp and a SHA-256 of exactly what came back, so any number here traces to
 the bytes it came from.</p>
-<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/neldivad/wss-hugging-face">https://github.com/neldivad/wss-hugging-face</a>, accessed 2026-09-05.</p>
+<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/q3dresearch/wss-hugging-face">https://github.com/q3dresearch/wss-hugging-face</a>, accessed 2026-09-08.</p>
 
 <footer>
 <p>Repository code and captured data are licensed separately. This dataset is

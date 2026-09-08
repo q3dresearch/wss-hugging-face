@@ -2,7 +2,7 @@
 <title>Papers that actually shipped</title>
 <desc>Ranked bar chart of research papers by how many of the top 1,000 Hugging Face models implement them.</desc>
 <rect width="940.0" height="540.0" fill="#fcfcfb"/>
-<text x="24.0" y="30.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">Papers that actually shipped</text><text x="24.0" y="50.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" style="">models among the top 1,000 by downloads that implement each paper · 429 papers represented · snapshot 2026-09-05</text>
+<text x="24.0" y="30.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">Papers that actually shipped</text><text x="24.0" y="50.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" style="">models among the top 1,000 by downloads that implement each paper · 428 papers represented · snapshot 2026-09-08</text>
 <line x1="430.0" y1="66.0" x2="430.0" y2="510.0" stroke="#c3c2b7" stroke-width="1"/>
 <path d="M430.0,74.0 h416.0 q4,0 4,4 v8.0 q0,4 -4,4 h-416.0 z" fill="#2a78d6"/>
 <text x="420.0" y="86.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen3 Technical Report</text>
@@ -26,35 +26,35 @@
 <text x="420.0" y="230.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Gemma 4 Technical Report</text>
 <text x="605.0" y="230.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">16</text>
 <path d="M430.0,242.0 h122.0 q4,0 4,4 v8.0 q0,4 -4,4 h-122.0 z" fill="#2a78d6"/>
-<text x="420.0" y="254.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">BoolQ: Exploring the Surprising Difficulty of Natural …tions</text>
+<text x="420.0" y="254.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Chronos: Learning the Language of Time Series</text>
 <text x="563.0" y="254.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">12</text>
 <path d="M430.0,266.0 h122.0 q4,0 4,4 v8.0 q0,4 -4,4 h-122.0 z" fill="#2a78d6"/>
-<text x="420.0" y="278.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Chronos: Learning the Language of Time Series</text>
+<text x="420.0" y="278.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen2.5-VL Technical Report</text>
 <text x="563.0" y="278.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">12</text>
-<path d="M430.0,290.0 h122.0 q4,0 4,4 v8.0 q0,4 -4,4 h-122.0 z" fill="#2a78d6"/>
-<text x="420.0" y="302.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen2.5-VL Technical Report</text>
-<text x="563.0" y="302.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">12</text>
+<path d="M430.0,290.0 h111.5 q4,0 4,4 v8.0 q0,4 -4,4 h-111.5 z" fill="#2a78d6"/>
+<text x="420.0" y="302.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">BoolQ: Exploring the Surprising Difficulty of Natural …tions</text>
+<text x="552.5" y="302.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">11</text>
 <path d="M430.0,314.0 h111.5 q4,0 4,4 v8.0 q0,4 -4,4 h-111.5 z" fill="#2a78d6"/>
 <text x="420.0" y="326.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Sentence-BERT: Sentence Embeddings using Siamese BERT-…works</text>
 <text x="552.5" y="326.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">11</text>
 <path d="M430.0,338.0 h111.5 q4,0 4,4 v8.0 q0,4 -4,4 h-111.5 z" fill="#2a78d6"/>
-<text x="420.0" y="350.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">BEIR: A Heterogenous Benchmark for Zero-shot Evaluatio…odels</text>
+<text x="420.0" y="350.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen2.5-Coder Technical Report</text>
 <text x="552.5" y="350.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">11</text>
-<path d="M430.0,362.0 h111.5 q4,0 4,4 v8.0 q0,4 -4,4 h-111.5 z" fill="#2a78d6"/>
-<text x="420.0" y="374.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen2.5-Coder Technical Report</text>
-<text x="552.5" y="374.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">11</text>
+<path d="M430.0,362.0 h101.0 q4,0 4,4 v8.0 q0,4 -4,4 h-101.0 z" fill="#2a78d6"/>
+<text x="420.0" y="374.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Exploring the Limits of Transfer Learning with a Unifi…ormer</text>
+<text x="542.0" y="374.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">10</text>
 <path d="M430.0,386.0 h101.0 q4,0 4,4 v8.0 q0,4 -4,4 h-101.0 z" fill="#2a78d6"/>
-<text x="420.0" y="398.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Exploring the Limits of Transfer Learning with a Unifi…ormer</text>
+<text x="420.0" y="398.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">BEIR: A Heterogenous Benchmark for Zero-shot Evaluatio…odels</text>
 <text x="542.0" y="398.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">10</text>
 <path d="M430.0,410.0 h101.0 q4,0 4,4 v8.0 q0,4 -4,4 h-101.0 z" fill="#2a78d6"/>
-<text x="420.0" y="422.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">MTEB: Massive Text Embedding Benchmark</text>
+<text x="420.0" y="422.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">C-Pack: Packed Resources For General Chinese Embeddings</text>
 <text x="542.0" y="422.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">10</text>
 <path d="M430.0,434.0 h101.0 q4,0 4,4 v8.0 q0,4 -4,4 h-101.0 z" fill="#2a78d6"/>
-<text x="420.0" y="446.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">C-Pack: Packed Resources For General Chinese Embeddings</text>
+<text x="420.0" y="446.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">A Multi-Task Embedder For Retrieval Augmented LLMs</text>
 <text x="542.0" y="446.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">10</text>
-<path d="M430.0,458.0 h101.0 q4,0 4,4 v8.0 q0,4 -4,4 h-101.0 z" fill="#2a78d6"/>
-<text x="420.0" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">A Multi-Task Embedder For Retrieval Augmented LLMs</text>
-<text x="542.0" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">10</text>
+<path d="M430.0,458.0 h90.5 q4,0 4,4 v8.0 q0,4 -4,4 h-90.5 z" fill="#2a78d6"/>
+<text x="420.0" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">MTEB: Massive Text Embedding Benchmark</text>
+<text x="531.5" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">9</text>
 <path d="M430.0,482.0 h90.5 q4,0 4,4 v8.0 q0,4 -4,4 h-90.5 z" fill="#2a78d6"/>
 <text x="420.0" y="494.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#52514e" text-anchor="end" font-weight="normal" style="">Sigmoid Loss for Language Image Pre-Training</text>
 <text x="531.5" y="494.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="font-variant-numeric: tabular-nums;">9</text>
