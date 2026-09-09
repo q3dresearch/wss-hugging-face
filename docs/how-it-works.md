@@ -61,7 +61,7 @@ triage is a weekly read of that file. To re-enable: fix the cause, set
 ```bash
 python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt      # or, against a sibling checkout: pip install -e ../wss-engine
-export WSS_CONTACT="neldivad +https://github.com/q3dresearch/wss-hugging-face"
+export WSS_CONTACT="q3dresearch +https://github.com/q3dresearch/wss-hugging-face"
 
 wss validate
 wss doctor hf.models.text-generation
