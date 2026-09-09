@@ -6,48 +6,48 @@
 <line x1="292.0" y1="66.0" x2="292.0" y2="524.0" stroke="#c3c2b7" stroke-width="1"/>
 <path d="M292.0,72.0 h540.0 q4,0 4,4 v12.0 q0,4 -4,4 h-540.0 z" fill="#2a78d6"/>
 <text x="282.0" y="86.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">sentence-transformers/all-Min…L6-v2</text>
-<text x="844.0" y="86.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">251.4M</text>
-<path d="M292.0,102.0 h136.0 q4,0 4,4 v12.0 q0,4 -4,4 h-136.0 z" fill="#2a78d6"/>
-<text x="282.0" y="116.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">BAAI/bge-small-en-v1.5</text>
-<text x="440.0" y="116.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">64.7M</text>
-<path d="M292.0,132.0 h105.8 q4,0 4,4 v12.0 q0,4 -4,4 h-105.8 z" fill="#2a78d6"/>
-<text x="282.0" y="146.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">google-bert/bert-base-uncased</text>
-<text x="409.8" y="146.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">50.7M</text>
-<path d="M292.0,162.0 h77.7 q4,0 4,4 v12.0 q0,4 -4,4 h-77.7 z" fill="#2a78d6"/>
-<text x="282.0" y="176.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">BAAI/bge-m3</text>
-<text x="381.7" y="176.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">37.7M</text>
-<path d="M292.0,192.0 h47.8 q4,0 4,4 v12.0 q0,4 -4,4 h-47.8 z" fill="#2a78d6"/>
-<text x="282.0" y="206.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">amazon/chronos-2</text>
-<text x="351.8" y="206.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">23.9M</text>
-<path d="M292.0,222.0 h42.2 q4,0 4,4 v12.0 q0,4 -4,4 h-42.2 z" fill="#2a78d6"/>
-<text x="282.0" y="236.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen/Qwen3-0.6B</text>
-<text x="346.2" y="236.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">21.3M</text>
-<path d="M292.0,252.0 h40.4 q4,0 4,4 v12.0 q0,4 -4,4 h-40.4 z" fill="#2a78d6"/>
-<text x="282.0" y="266.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">openai/clip-vit-base-patch32</text>
-<text x="344.4" y="266.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">20.5M</text>
-<path d="M292.0,282.0 h36.9 q4,0 4,4 v12.0 q0,4 -4,4 h-36.9 z" fill="#2a78d6"/>
-<text x="282.0" y="296.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Comfy-Org/MiniMax-H3</text>
-<text x="340.9" y="296.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">18.9M</text>
-<path d="M292.0,312.0 h35.0 q4,0 4,4 v12.0 q0,4 -4,4 h-35.0 z" fill="#2a78d6"/>
-<text x="282.0" y="326.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">BAAI/bge-reranker-v2-m3</text>
-<text x="339.0" y="326.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">18M</text>
-<path d="M292.0,342.0 h33.0 q4,0 4,4 v12.0 q0,4 -4,4 h-33.0 z" fill="#2a78d6"/>
-<text x="282.0" y="356.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Comfy-Org/stable-diffusion-v1…chive</text>
-<text x="337.0" y="356.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">17.1M</text>
-<path d="M292.0,372.0 h31.1 q4,0 4,4 v12.0 q0,4 -4,4 h-31.1 z" fill="#2a78d6"/>
-<text x="282.0" y="386.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">nomic-ai/nomic-embed-text-v1.5</text>
-<text x="335.1" y="386.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">16.2M</text>
-<path d="M292.0,402.0 h27.7 q4,0 4,4 v12.0 q0,4 -4,4 h-27.7 z" fill="#2a78d6"/>
-<text x="282.0" y="416.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">openai-community/gpt2</text>
-<text x="331.7" y="416.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">14.6M</text>
-<path d="M292.0,432.0 h27.3 q4,0 4,4 v12.0 q0,4 -4,4 h-27.3 z" fill="#2a78d6"/>
-<text x="282.0" y="446.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen/Qwen3-VL-8B-Instruct</text>
-<text x="331.3" y="446.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">14.5M</text>
-<path d="M292.0,462.0 h24.1 q4,0 4,4 v12.0 q0,4 -4,4 h-24.1 z" fill="#2a78d6"/>
-<text x="282.0" y="476.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen/Qwen3-8B</text>
-<text x="328.1" y="476.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">13M</text>
-<path d="M292.0,492.0 h23.2 q4,0 4,4 v12.0 q0,4 -4,4 h-23.2 z" fill="#2a78d6"/>
-<text x="282.0" y="506.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">unsloth/Qwen3-Coder-30B-A3B-I…-GGUF</text>
-<text x="327.2" y="506.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">12.6M</text>
+<text x="844.0" y="86.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">253.3M</text>
+<path d="M292.0,102.0 h182.1 q4,0 4,4 v12.0 q0,4 -4,4 h-182.1 z" fill="#2a78d6"/>
+<text x="282.0" y="116.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">cross-encoder/ms-marco-MiniLM-L6-v2</text>
+<text x="486.1" y="116.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">86.7M</text>
+<path d="M292.0,132.0 h135.4 q4,0 4,4 v12.0 q0,4 -4,4 h-135.4 z" fill="#2a78d6"/>
+<text x="282.0" y="146.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">BAAI/bge-small-en-v1.5</text>
+<text x="439.4" y="146.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">64.9M</text>
+<path d="M292.0,162.0 h120.9 q4,0 4,4 v12.0 q0,4 -4,4 h-120.9 z" fill="#2a78d6"/>
+<text x="282.0" y="176.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">google/electra-base-discriminator</text>
+<text x="424.9" y="176.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">58.2M</text>
+<path d="M292.0,192.0 h104.2 q4,0 4,4 v12.0 q0,4 -4,4 h-104.2 z" fill="#2a78d6"/>
+<text x="282.0" y="206.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">google-bert/bert-base-uncased</text>
+<text x="408.2" y="206.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">50.4M</text>
+<path d="M292.0,222.0 h95.5 q4,0 4,4 v12.0 q0,4 -4,4 h-95.5 z" fill="#2a78d6"/>
+<text x="282.0" y="236.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">sentence-transformers/paraphr…12-v2</text>
+<text x="399.5" y="236.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">46.3M</text>
+<path d="M292.0,252.0 h77.6 q4,0 4,4 v12.0 q0,4 -4,4 h-77.6 z" fill="#2a78d6"/>
+<text x="282.0" y="266.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">BAAI/bge-m3</text>
+<text x="381.6" y="266.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">38M</text>
+<path d="M292.0,282.0 h47.3 q4,0 4,4 v12.0 q0,4 -4,4 h-47.3 z" fill="#2a78d6"/>
+<text x="282.0" y="296.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">sentence-transformers/all-mpn…se-v2</text>
+<text x="351.3" y="296.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">23.9M</text>
+<path d="M292.0,312.0 h47.0 q4,0 4,4 v12.0 q0,4 -4,4 h-47.0 z" fill="#2a78d6"/>
+<text x="282.0" y="326.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">amazon/chronos-2</text>
+<text x="351.0" y="326.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">23.8M</text>
+<path d="M292.0,342.0 h46.9 q4,0 4,4 v12.0 q0,4 -4,4 h-46.9 z" fill="#2a78d6"/>
+<text x="282.0" y="356.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">google-t5/t5-small</text>
+<text x="350.9" y="356.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">23.7M</text>
+<path d="M292.0,372.0 h42.2 q4,0 4,4 v12.0 q0,4 -4,4 h-42.2 z" fill="#2a78d6"/>
+<text x="282.0" y="386.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Qwen/Qwen3-0.6B</text>
+<text x="346.2" y="386.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">21.5M</text>
+<path d="M292.0,402.0 h42.0 q4,0 4,4 v12.0 q0,4 -4,4 h-42.0 z" fill="#2a78d6"/>
+<text x="282.0" y="416.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">FacebookAI/xlm-roberta-base</text>
+<text x="346.0" y="416.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">21.4M</text>
+<path d="M292.0,432.0 h40.5 q4,0 4,4 v12.0 q0,4 -4,4 h-40.5 z" fill="#2a78d6"/>
+<text x="282.0" y="446.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">openai/clip-vit-base-patch32</text>
+<text x="344.5" y="446.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">20.7M</text>
+<path d="M292.0,462.0 h36.4 q4,0 4,4 v12.0 q0,4 -4,4 h-36.4 z" fill="#2a78d6"/>
+<text x="282.0" y="476.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">Comfy-Org/MiniMax-H3</text>
+<text x="340.4" y="476.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">18.8M</text>
+<path d="M292.0,492.0 h35.0 q4,0 4,4 v12.0 q0,4 -4,4 h-35.0 z" fill="#2a78d6"/>
+<text x="282.0" y="506.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#52514e" text-anchor="end" font-weight="normal" style="">BAAI/bge-reranker-v2-m3</text>
+<text x="339.0" y="506.5" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">18.2M</text>
 <text x="24.0" y="540.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="10" fill="#898781" text-anchor="start" font-weight="normal" style="">source: wss-hugging-face · hf.models.text-generation · CC-BY-4.0</text>
 </svg>

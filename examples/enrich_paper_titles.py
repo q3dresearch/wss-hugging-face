@@ -20,6 +20,21 @@ import time
 import urllib.request
 from pathlib import Path
 
+
+def _open_partition(path):
+    """Open a derived partition, gzipped or not.
+
+    Engine v0.6.34 made `derived/observations/*.csv.gz` the written form. Every
+    reader in this repo went on globbing `*.csv`, found nothing, and said "no
+    observations yet -- run capture + derive first" over a full archive. Stdlib
+    only, so `head`/`zcat` remain the only tools a reader needs.
+    """
+    import gzip
+    import io
+    if str(path).endswith(".gz"):
+        return io.TextIOWrapper(gzip.open(path, "rb"), encoding="utf-8", newline="")
+    return open(path, encoding="utf-8", newline="")
+
 REPO = Path(__file__).resolve().parents[1]
 CACHE = REPO / "examples" / "paper-titles.json"
 API = "https://export.arxiv.org/api/query?id_list={ids}&max_results={n}"
@@ -29,8 +44,8 @@ ENTRY_RE = re.compile(r"<entry>.*?<id>http://arxiv\.org/abs/(\S+?)</id>.*?<title
 
 def ids_in_derived() -> set[str]:
     found: set[str] = set()
-    for partition in sorted(glob.glob(str(REPO / "derived" / "observations" / "*.csv"))):
-        with open(partition, encoding="utf-8", newline="") as fh:
+    for partition in sorted(glob.glob(str(REPO / "derived" / "observations" / "*.csv*"))):
+        with _open_partition(partition) as fh:
             for row in csv.DictReader(fh):
                 if row["metric"] == "models_implementing":
                     found.add(row["entity_id"].removeprefix("paper:arxiv:"))
