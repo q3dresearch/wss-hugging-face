@@ -1,4 +1,7 @@
 # Field shape verified against the live API on 2026-08-31 (see git history).
+# expand[]=tags added 2026-09-12, verified live the same day: this endpoint
+# returns tags when asked and did not before, so every capture until now holds
+# no arxiv ids for these models — a permanently missing window, not a parse gap.
 source_id: hf.models.top-likes
 status: active
 cadence: weekly
@@ -15,7 +18,7 @@ notes: >-
   Interest 2: attention (likes) diverging from usage (downloads) flags hype and sleepers.
 
 endpoints:
-  - url: "https://huggingface.co/api/models?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=pipeline_tag"
+  - url: "https://huggingface.co/api/models?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=pipeline_tag&expand[]=tags"
     delay_seconds: 2
 
 gates:
