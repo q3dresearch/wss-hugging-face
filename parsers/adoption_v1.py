@@ -11,9 +11,20 @@ Emits two layers from the same response:
                task, and implement each arXiv paper
 
 The aggregate layer is the substitution measure. Citation counts track
-academic attention; `paper:<id> models_implementing` tracks how many models
-people actually download were built on that idea — production adoption, and
-the thing that says an idea won rather than merely trended.
+academic attention; `paper:<id>` tracks how many models people actually
+download were built on that idea — production adoption, and the thing that
+says an idea won rather than merely trended.
+
+**Two counts, because one of them is a trap.** `models_implementing` counts
+models, and a lab that ships thirty size variants of one family votes thirty
+times while a lab that ships one votes once. In the 2026-09-08 capture YaRN
+reads 34 models, of which 32 are Qwen: one adoption decision, counted 32
+times. `orgs_implementing` counts distinct namespaces instead, which is the
+number of independent parties who chose the idea. Rank by the first and you
+measure release cadence; rank by the second and you measure adoption. Both
+are emitted because their ratio is informative on its own — a paper with many
+models and one org is a house technique, many orgs and few models each is a
+standard.
 
 Run: wss derive
 """
@@ -23,7 +34,7 @@ from collections import Counter
 
 from wss import derive
 
-PARSER_VERSION = "2"
+PARSER_VERSION = "3"
 
 # (response key, metric name, unit) — keys verified against the live API 2026-08-31.
 # Only keys present in the payload are emitted, so one parser serves every
@@ -40,6 +51,17 @@ METRICS = (
 ARXIV_PREFIX = "arxiv:"
 
 
+def _org(entity_id: str) -> str:
+    """The namespace that published this entity.
+
+    Legacy canonical models carry no namespace at all (`gpt2`,
+    `bert-base-uncased`). None appear in the current top-1000 listings, but the
+    parser runs over whatever the archive holds, so a bare id counts as its own
+    publisher rather than collapsing every such model into one empty-string org.
+    """
+    return entity_id.split("/", 1)[0] if "/" in entity_id else entity_id
+
+
 def parse(body: bytes, ctx: derive.ParseContext):
     items = json.loads(body)
     if not isinstance(items, list):
@@ -48,6 +70,7 @@ def parse(body: bytes, ctx: derive.ParseContext):
     libraries: Counter = Counter()
     tasks: Counter = Counter()
     papers: Counter = Counter()
+    paper_orgs: dict[str, set[str]] = {}
 
     for item in items:
         entity_id = item["id"]
@@ -63,7 +86,9 @@ def parse(body: bytes, ctx: derive.ParseContext):
             tasks[item["pipeline_tag"]] += 1
         # One model can cite several papers; count each at most once per model.
         for paper in {t for t in item.get("tags", []) if t.startswith(ARXIV_PREFIX)}:
-            papers[paper[len(ARXIV_PREFIX) :]] += 1
+            arxiv_id = paper[len(ARXIV_PREFIX) :]
+            papers[arxiv_id] += 1
+            paper_orgs.setdefault(arxiv_id, set()).add(_org(entity_id))
 
     listing_size = len(items)
     if listing_size:
@@ -83,6 +108,12 @@ def parse(body: bytes, ctx: derive.ParseContext):
             entity_id=f"paper:arxiv:{paper}",
             metric="models_implementing",
             value=count,
+            unit="count",
+        )
+        yield derive.Observation(
+            entity_id=f"paper:arxiv:{paper}",
+            metric="orgs_implementing",
+            value=len(paper_orgs[paper]),
             unit="count",
         )
 
