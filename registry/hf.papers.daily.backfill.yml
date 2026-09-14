@@ -1,0 +1,47 @@
+# PAUSED ON PURPOSE -- this entry documents a decision, not a collection.
+#
+# It is a ONE-TIME BACKFILL that has already run. Pausing it is the mechanism
+# that stops it running again, not an unresolved question: `capture` and `plan`
+# filter on status == active so it never re-fetches, while `derive` has no
+# status filter, so the 865 archived days still parse on every run. That split
+# between the two commands is the entire reason the entry stays in the registry
+# instead of being deleted -- deleting it would orphan the raw it collected.
+#
+# What would change the answer: Hugging Face extending ?date= further back, or
+# a gap being found in the 865 days already held. Neither is outstanding.
+#
+# One-time backfill, not a cadence. Field shape verified against the live API on
+# 2026-09-13 — the same endpoint as hf.papers.daily with a ?date= parameter.
+source_id: hf.papers.daily.backfill
+status: paused          # capture and plan filter on status == active, so this never
+                        # re-fetches; derive has no status filter, so the 865 archived
+                        # days still parse. That split is the whole reason it is here.
+cadence: weekly         # required by the schema; inert while paused
+schema_id: papers.v1
+
+publisher: Hugging Face
+publisher_tier: first_party
+destroys_own_history: true   # upvote TRAJECTORIES are destroyed and cannot be recovered.
+                             # Membership can: ?date=YYYY-MM-DD serves the feed back to
+                             # 2023-05-04. Reading the flag as covering both is what made
+                             # this look unrecoverable.
+licence: "Hub metadata via public API; see https://huggingface.co/terms-of-service"
+personal_data: none
+storage: git
+
+notes: >-
+  865 days recovered 2026-09-13 by examples/backfill_daily_papers.py — 17,534 papers,
+  63% with a GitHub star count, 98% with keywords. Every upvote and star figure here
+  is as-of-fetch, not as-of-date, so it supports cross-sections and not trajectories.
+
+endpoints:
+  - url: "https://huggingface.co/api/daily_papers?date=2023-05-04"
+    delay_seconds: 1
+
+gates:
+  expect_status: 200
+  min_bytes: 100
+  content_type_any: [json]
+  must_contain: ["paper"]
+  must_not_contain: ["Access Denied"]
+  max_shrink_pct: 50

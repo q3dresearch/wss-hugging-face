@@ -241,12 +241,21 @@ def adoption_curves(rows: list[dict], out: Path, synthetic: bool) -> str:
 
 
 def papers_in_production(root: Path, out: Path, top_n: int = 18) -> str:
-    """Which papers' ideas are actually built into models people download.
+    """House technique or standard: the two rankings of the same 430 papers disagree.
 
-    Citation counts measure academic attention. This measures production
-    adoption: how many of the top-1,000 most-downloaded models carry an
-    `arxiv:` tag for the paper. It is the difference between an idea being
-    discussed and an idea having won.
+    `models_implementing` counts models, so a lab shipping thirty size variants of one
+    family votes thirty times while a lab shipping one votes once. Ranked by it, YaRN
+    reads 34 models -- of which 32 are Qwen. `orgs_implementing` counts distinct
+    namespaces, which is the number of independent parties who chose the idea.
+
+    Plotting one against the other separates two things a single ranking conflates.
+    **Bottom right is a house technique**: many models, one publisher, an idea its
+    author ships a lot of. **Top left is a standard**: several publishers, few models
+    each, an idea other people picked up. The diagonal is empty, which is the finding.
+
+    An earlier version of this chart was a ranked bar of models_implementing alone. It
+    was one axis, it was the misleading axis, and it put SigLIP -- nine models, all of
+    them google/siglip* -- above ViT, which three independent orgs implement.
     """
     import json
 
@@ -255,49 +264,100 @@ def papers_in_production(root: Path, out: Path, top_n: int = 18) -> str:
         with _open_partition(partition) as fh:
             rows.extend(
                 r for r in csv.DictReader(fh)
-                if r["metric"] == "models_implementing" and r["series_id"] == "hf.models.top-downloads"
+                if r["metric"] in ("models_implementing", "orgs_implementing")
+                and r["series_id"] == "hf.models.top-downloads"
             )
     if not rows:
         return "papers-in-production.svg skipped: no models_implementing observations yet"
 
     latest = max(r["observed_at"] for r in rows)
-    ranked = sorted(
-        ((r["entity_id"].removeprefix("paper:arxiv:"), int(r["value"])) for r in rows if r["observed_at"] == latest),
-        key=lambda kv: (-kv[1], kv[0]),
-    )
+    models, orgs = {}, {}
+    for r in rows:
+        if r["observed_at"] != latest:
+            continue
+        pid = r["entity_id"].removeprefix("paper:arxiv:")
+        (models if r["metric"] == "models_implementing" else orgs)[pid] = int(r["value"])
+    if not orgs:
+        return "papers-in-production.svg skipped: re-run derive, orgs_implementing is missing"
+
     titles = {}
     cache = root / "examples" / "paper-titles.json"
     if cache.exists():
         titles = json.loads(cache.read_text(encoding="utf-8"))
 
-    top = ranked[:top_n]
-    width, left, right, top_pad = 940.0, 430.0, 90.0, 74.0
-    bar_h, gap = 16.0, 8.0
-    height = top_pad + len(top) * (bar_h + gap) + 34
-    vmax = top[0][1]
-    span = width - left - right
+    # 1910.09700 is the carbon-emissions field of Hugging Face's model-card template,
+    # not an implementation of anything. It reaches 12 publishers on boilerplate alone
+    # and, left in, it sets the y-scale and empties the plot. Named and excluded rather
+    # than quietly clipped.
+    BOILERPLATE = {"1910.09700", "2205.05198"}
+    excluded = [(models[p], orgs.get(p, 1), p) for p in BOILERPLATE if p in models]
+    pts = [(m, orgs.get(pid, 1), pid) for pid, m in models.items()
+           if m > 0 and pid not in BOILERPLATE]
+    width, height = 980.0, 512.0
+    left, right, top_pad, bottom = 70.0, 268.0, 96.0, 128.0
+    plot_w, plot_h = width - left - right, height - top_pad - bottom
+    max_m = max(m for m, _, _ in pts)
+    max_o = max(o for _, o, _ in pts)
+    sx = lambda m: left + math.log10(m) / math.log10(max_m) * plot_w
+    sy = lambda o: top_pad + plot_h - (o - 1) / max(1, max_o - 1) * plot_h
 
-    body = [
-        chart_header(
-            width,
-            "Papers that actually shipped",
-            f"models among the top 1,000 by downloads that implement each paper · "
-            f"{len(ranked)} papers represented · snapshot {latest[:10]}",
-        )
-    ]
-    body.append(f'<line x1="{left}" y1="{top_pad - 8}" x2="{left}" y2="{height - 30}" stroke="{BASELINE}" stroke-width="1"/>')
-    for i, (arxiv_id, count) in enumerate(top):
-        y = top_pad + i * (bar_h + gap)
-        w = max(2.0, count / vmax * span)
-        body.append(rounded_end_bar(left, y, w, bar_h))
-        label = titles.get(arxiv_id, arxiv_id)
-        body.append(svg_text(left - 10, y + bar_h - 4, truncate(label, left - 40, 11), size=11, fill=INK2, anchor="end"))
-        body.append(svg_text(left + w + 7, y + bar_h - 4, str(count), size=11, fill=INK, weight="600", tabular=True))
-    body.append(
-        svg_text(24, height - 6, "source: wss-hugging-face · hf.models.top-downloads · titles via arXiv · CC-BY-4.0", size=10, fill=MUTED)
-    )
-    out.write_text(wrap_svg(width, height, "Papers that actually shipped", "Ranked bar chart of research papers by how many of the top 1,000 Hugging Face models implement them.", "\n".join(body)), encoding="utf-8")
-    return f"{out.relative_to(REPO)} — {len(top)} of {len(ranked)} papers"
+    body = [chart_header(width, "House technique, or standard?",
+                         "Each of %d papers by how many models cite it and how many distinct "
+                         "publishers do. Log x." % len(pts))]
+    for o in range(1, max_o + 1):
+        y = sy(o)
+        body.append(f'<line x1="{left}" y1="{y:.1f}" x2="{left + plot_w:.1f}" y2="{y:.1f}" stroke="{GRID}" stroke-width="1"/>')
+        body.append(svg_text(left - 10, y + 4, str(o), size=11, fill=MUTED, anchor="end", tabular=True))
+    for m in (1, 3, 10, 30, 100, 300):
+        if m > max_m:
+            continue
+        x = sx(m)
+        body.append(f'<line x1="{x:.1f}" y1="{top_pad}" x2="{x:.1f}" y2="{top_pad + plot_h:.1f}" stroke="{GRID}" stroke-width="1"/>')
+        body.append(svg_text(x, top_pad + plot_h + 20, str(m), size=11, fill=MUTED, anchor="middle", tabular=True))
+    body.append(svg_text(left + plot_w / 2, top_pad + plot_h + 44, "models citing the paper", size=12, fill=INK2, anchor="middle"))
+    body.append(svg_text(left - 10, top_pad - 14, "distinct publishers", size=12, fill=INK2, anchor="start"))
+
+    # Label the extremes of each story, never the middle: the corners are the claim.
+    house = sorted((p for p in pts if p[1] == 1), key=lambda p: -p[0])[:4]
+    standard = sorted(pts, key=lambda p: (-p[1], p[0]))[:5]
+    named = {p[2] for p in house + standard}
+    for m, o, pid in sorted(pts, key=lambda p: p[2]):
+        x, y = sx(m), sy(o)
+        hot = pid in named
+        body.append(
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{5.0 if hot else 3.2}" '
+            f'fill="{SERIES[1] if o == 1 else SERIES[0]}" fill-opacity="{0.9 if hot else 0.32}" '
+            f'{"stroke=\"" + SURFACE + "\" stroke-width=\"1.5\"" if hot else ""}/>')
+    placed = []
+    for m, o, pid in sorted(house + standard, key=lambda p: (-p[1], -p[0])):
+        x, y = sx(m), sy(o)
+        # Dodge away from the nearer edge: a stack starting at the plot floor would
+        # otherwise walk straight down through the footnote rule.
+        step = -15 if y > top_pad + plot_h * 0.6 else 15
+        ly = y
+        while any(abs(ly - q) < 15 for q in placed):
+            ly += step
+        placed.append(ly)
+        label = truncate(titles.get(pid, pid).split(":")[0], right - 86, 11)
+        body.append(f'<line x1="{x + 6:.1f}" y1="{y:.1f}" x2="{left + plot_w + 12:.1f}" y2="{ly:.1f}" stroke="{BASELINE}" stroke-width="0.8"/>')
+        body.append(svg_text(left + plot_w + 16, ly + 3.5, f"{label}  {m}m/{o}o", size=11, fill=INK2))
+
+    n_house = sum(1 for _, o, _ in pts if o == 1)
+    body.append(f'<line x1="24" y1="{height - 46:.1f}" x2="{width - 24:.1f}" y2="{height - 46:.1f}" stroke="{GRID}" stroke-width="1"/>')
+    body.append(svg_text(24, height - 28,
+                         "%d of %d papers (%.0f%%) are cited by exactly one publisher — their own author. "
+                         "A ranking by model count alone hides that entirely." % (n_house, len(pts), 100 * n_house / len(pts)),
+                         size=11, fill=INK2))
+    if excluded:
+        m0, o0, p0 = excluded[0]
+        body.append(svg_text(24, height - 12,
+                             "Excluded: %s on %d publishers — the carbon-emissions field of the model-card "
+                             "template, and it would set the y-scale on its own." % (p0, o0),
+                             size=11, fill=MUTED))
+    out.write_text(wrap_svg(width, height, "House technique or standard",
+                            "Models citing each paper against distinct publishers citing it.",
+                            "\n".join(body)), encoding="utf-8")
+    return f"wrote {out.relative_to(REPO)}"
 
 
 def main() -> int:
