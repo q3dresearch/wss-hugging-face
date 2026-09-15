@@ -1,0 +1,580 @@
+{
+  "generated_at": "2026-09-15T13:15:02Z",
+  "note": "Inferred from the derived rows by `wss schema`, not hand-written. Regenerate after any derive.",
+  "sources": {
+    "hf.datasets.newest": {
+      "source_id": "hf.datasets.newest",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.datasets.top-downloads": {
+      "source_id": "hf.datasets.top-downloads",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.datasets.top-likes": {
+      "source_id": "hf.datasets.top-likes",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.datasets.trending": {
+      "source_id": "hf.datasets.trending",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.models.newest": {
+      "source_id": "hf.models.newest",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.models.text-generation": {
+      "source_id": "hf.models.text-generation",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.models.top-downloads": {
+      "source_id": "hf.models.top-downloads",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.models.top-likes": {
+      "source_id": "hf.models.top-likes",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.models.trending": {
+      "source_id": "hf.models.trending",
+      "schema_id": "adoption.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.papers.daily.backfill": {
+      "source_id": "hf.papers.daily.backfill",
+      "schema_id": "papers.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "hf.papers.daily": {
+      "source_id": "hf.papers.daily",
+      "schema_id": "papers.v1",
+      "cadence": "weekly",
+      "licence": "Hub metadata via public API; see https://huggingface.co/terms-of-service",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "Hugging Face",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    }
+  },
+  "observations": {
+    "rows": 342414,
+    "columns": [
+      "series_id",
+      "entity_id",
+      "observed_at",
+      "captured_at",
+      "metric",
+      "value",
+      "unit",
+      "source_id",
+      "raw_ref",
+      "parser_version"
+    ],
+    "partitions": [
+      "2026-08.csv.gz",
+      "2026-09.csv.gz"
+    ],
+    "series": {
+      "hf.datasets.newest": {
+        "rows": 22011,
+        "entities": 7691,
+        "entity_id_samples": [
+          "00000N0/1",
+          "00000N0/2",
+          "00000N0/3"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "entities_listed",
+          "likes"
+        ]
+      },
+      "hf.datasets.top-downloads": {
+        "rows": 33011,
+        "entities": 1100,
+        "entity_id_samples": [
+          "3dlg-hcvc/omages_ABO",
+          "86Cao/MegaPairs-Standard",
+          "ACCC1380/private-model"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "downloads_all_time",
+          "entities_listed",
+          "likes"
+        ]
+      },
+      "hf.datasets.top-likes": {
+        "rows": 33011,
+        "entities": 1007,
+        "entity_id_samples": [
+          "0xDing/wikipedia-cn-20230720-filtered",
+          "5CD-AI/LLaVA-CoT-o1-Instruct",
+          "5CD-AI/Viet-Handwriting-OCR-v2"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "downloads_all_time",
+          "entities_listed",
+          "likes"
+        ]
+      },
+      "hf.datasets.trending": {
+        "rows": 33011,
+        "entities": 1961,
+        "entity_id_samples": [
+          "0jl/SPair-71k",
+          "0xDing/wikipedia-cn-20230720-filtered",
+          "0xSero/local-ai-registry"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "entities_listed",
+          "likes",
+          "trending_score"
+        ]
+      },
+      "hf.models.newest": {
+        "rows": 22302,
+        "entities": 8193,
+        "entity_id_samples": [
+          "0-ASWIN-0/CyberGPT-Qwen3-4B",
+          "0001hmnt/Wan2.2_I2V_SockJob",
+          "0Corvid0/pi05-b1k-eval-checkpoints"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "entities_listed",
+          "likes",
+          "models_serving"
+        ]
+      },
+      "hf.models.text-generation": {
+        "rows": 39013,
+        "entities": 1065,
+        "entity_id_samples": [
+          "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+          "0xSero/deepseek-v4-flash-0731-spark",
+          "AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "downloads_all_time",
+          "entities_listed",
+          "likes"
+        ]
+      },
+      "hf.models.top-downloads": {
+        "rows": 43470,
+        "entities": 1633,
+        "entity_id_samples": [
+          "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+          "AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16",
+          "AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "downloads_all_time",
+          "entities_listed",
+          "likes",
+          "models_implementing",
+          "models_serving",
+          "models_using",
+          "orgs_implementing"
+        ]
+      },
+      "hf.models.top-likes": {
+        "rows": 33484,
+        "entities": 1062,
+        "entity_id_samples": [
+          "01-ai/Yi-34B",
+          "2Noise/ChatTTS",
+          "2vXpSwA7/iroiro-lora"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "downloads_all_time",
+          "entities_listed",
+          "likes",
+          "models_serving"
+        ]
+      },
+      "hf.models.trending": {
+        "rows": 34222,
+        "entities": 1762,
+        "entity_id_samples": [
+          "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+          "0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+          "0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-GGUF"
+        ],
+        "metrics": [
+          "downloads_30d",
+          "entities_listed",
+          "likes",
+          "models_serving",
+          "models_using",
+          "trending_score"
+        ]
+      },
+      "hf.papers.daily": {
+        "rows": 2755,
+        "entities": 273,
+        "entity_id_samples": [
+          "2504.15476",
+          "2608.05879",
+          "2608.09408"
+        ],
+        "metrics": [
+          "comments",
+          "github_stars",
+          "upvotes"
+        ]
+      },
+      "hf.papers.daily.backfill": {
+        "rows": 46124,
+        "entities": 17532,
+        "entity_id_samples": [
+          "2211.16780",
+          "2302.06555",
+          "2304.09355"
+        ],
+        "metrics": [
+          "comments",
+          "github_stars",
+          "upvotes"
+        ]
+      }
+    },
+    "parser_versions": [
+      "2",
+      "3"
+    ]
+  },
+  "metrics": {
+    "comments": {
+      "rows": 18633,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.papers.daily",
+        "hf.papers.daily.backfill"
+      ],
+      "entities": 17534,
+      "distinct_values": 39,
+      "empty": 0,
+      "min": "0",
+      "max": "143",
+      "samples": [
+        "0",
+        "1",
+        "10"
+      ]
+    },
+    "downloads_30d": {
+      "rows": 101000,
+      "unit": "count/30d",
+      "type": "number",
+      "series": [
+        "hf.datasets.newest",
+        "hf.datasets.top-downloads",
+        "hf.datasets.top-likes",
+        "hf.datasets.trending",
+        "hf.models.newest",
+        "hf.models.text-generation",
+        "hf.models.top-downloads",
+        "hf.models.top-likes",
+        "hf.models.trending"
+      ],
+      "entities": 22785,
+      "distinct_values": 28252,
+      "empty": 0,
+      "min": "0",
+      "max": "255143740",
+      "samples": [
+        "0",
+        "1",
+        "10"
+      ]
+    },
+    "downloads_all_time": {
+      "rows": 57000,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.datasets.top-downloads",
+        "hf.datasets.top-likes",
+        "hf.models.text-generation",
+        "hf.models.top-downloads",
+        "hf.models.top-likes"
+      ],
+      "entities": 4432,
+      "distinct_values": 28347,
+      "empty": 0,
+      "min": "0",
+      "max": "3804110121",
+      "samples": [
+        "0",
+        "10",
+        "1000047"
+      ]
+    },
+    "entities_listed": {
+      "rows": 101,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.datasets.newest",
+        "hf.datasets.top-downloads",
+        "hf.datasets.top-likes",
+        "hf.datasets.trending",
+        "hf.models.newest",
+        "hf.models.text-generation",
+        "hf.models.top-downloads",
+        "hf.models.top-likes",
+        "hf.models.trending"
+      ],
+      "entities": 1,
+      "distinct_values": 1,
+      "empty": 0,
+      "min": "1000",
+      "max": "1000",
+      "samples": [
+        "1000"
+      ]
+    },
+    "github_stars": {
+      "rows": 11613,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.papers.daily",
+        "hf.papers.daily.backfill"
+      ],
+      "entities": 11059,
+      "distinct_values": 1581,
+      "empty": 0,
+      "min": "0",
+      "max": "91991",
+      "samples": [
+        "0",
+        "1",
+        "10"
+      ]
+    },
+    "likes": {
+      "rows": 101000,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.datasets.newest",
+        "hf.datasets.top-downloads",
+        "hf.datasets.top-likes",
+        "hf.datasets.trending",
+        "hf.models.newest",
+        "hf.models.text-generation",
+        "hf.models.top-downloads",
+        "hf.models.top-likes",
+        "hf.models.trending"
+      ],
+      "entities": 22785,
+      "distinct_values": 2199,
+      "empty": 0,
+      "min": "0",
+      "max": "14516",
+      "samples": [
+        "0",
+        "1",
+        "10"
+      ]
+    },
+    "models_implementing": {
+      "rows": 4718,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.models.top-downloads"
+      ],
+      "entities": 449,
+      "distinct_values": 29,
+      "empty": 0,
+      "min": "1",
+      "max": "42",
+      "samples": [
+        "1",
+        "10",
+        "11"
+      ]
+    },
+    "models_serving": {
+      "rows": 1654,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.models.newest",
+        "hf.models.top-downloads",
+        "hf.models.top-likes",
+        "hf.models.trending"
+      ],
+      "entities": 54,
+      "distinct_values": 111,
+      "empty": 0,
+      "min": "1",
+      "max": "324",
+      "samples": [
+        "1",
+        "10",
+        "100"
+      ]
+    },
+    "models_using": {
+      "rows": 1344,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.models.top-downloads",
+        "hf.models.trending"
+      ],
+      "entities": 114,
+      "distinct_values": 61,
+      "empty": 0,
+      "min": "1",
+      "max": "637",
+      "samples": [
+        "1",
+        "10",
+        "11"
+      ]
+    },
+    "orgs_implementing": {
+      "rows": 4718,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.models.top-downloads"
+      ],
+      "entities": 449,
+      "distinct_values": 5,
+      "empty": 0,
+      "min": "1",
+      "max": "12",
+      "samples": [
+        "1",
+        "12",
+        "2"
+      ]
+    },
+    "trending_score": {
+      "rows": 22000,
+      "unit": "score",
+      "type": "number",
+      "series": [
+        "hf.datasets.trending",
+        "hf.models.trending"
+      ],
+      "entities": 3584,
+      "distinct_values": 322,
+      "empty": 0,
+      "min": "1",
+      "max": "4293",
+      "samples": [
+        "1",
+        "10",
+        "100"
+      ]
+    },
+    "upvotes": {
+      "rows": 18633,
+      "unit": "count",
+      "type": "number",
+      "series": [
+        "hf.papers.daily",
+        "hf.papers.daily.backfill"
+      ],
+      "entities": 17534,
+      "distinct_values": 318,
+      "empty": 0,
+      "min": "0",
+      "max": "779",
+      "samples": [
+        "0",
+        "1",
+        "10"
+      ]
+    }
+  },
+  "raw": {
+    "files": 979,
+    "bytes_on_disk": 45176976,
+    "capture_dates": 8,
+    "first_capture": "2026-08-31T14:47:30Z",
+    "last_capture": "2026-09-13T20:09:39Z"
+  }
+}
