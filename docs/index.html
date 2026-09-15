@@ -40,37 +40,37 @@
       "contentUrl": "https://github.com/q3dresearch/wss-hugging-face/tree/main/data"
     }
   ],
-  "temporalCoverage": "2026-08-31/2026-09-08",
+  "temporalCoverage": "2026-08-31/2026-09-15",
   "isBasedOn": [
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/datasets?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt"
+      "url": "https://huggingface.co/api/datasets?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=tags"
     },
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/datasets?sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified"
+      "url": "https://huggingface.co/api/datasets?sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=tags"
     },
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/datasets?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified"
+      "url": "https://huggingface.co/api/datasets?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=tags"
     },
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/datasets?sort=trendingScore&direction=-1&limit=1000&expand[]=trendingScore&expand[]=downloads&expand[]=likes&expand[]=createdAt"
+      "url": "https://huggingface.co/api/datasets?sort=trendingScore&direction=-1&limit=1000&expand[]=trendingScore&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=tags"
     },
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/models?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=pipeline_tag"
+      "url": "https://huggingface.co/api/models?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=pipeline_tag&expand[]=tags"
     },
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/models?pipeline_tag=text-generation&sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified"
+      "url": "https://huggingface.co/api/models?pipeline_tag=text-generation&sort=downloads&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=tags"
     },
     {
       "@type": "Dataset",
@@ -80,12 +80,12 @@
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/models?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=pipeline_tag"
+      "url": "https://huggingface.co/api/models?sort=likes&direction=-1&limit=1000&expand[]=downloads&expand[]=downloadsAllTime&expand[]=likes&expand[]=createdAt&expand[]=lastModified&expand[]=pipeline_tag&expand[]=tags"
     },
     {
       "@type": "Dataset",
       "name": "Hugging Face",
-      "url": "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=1000&expand[]=trendingScore&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=pipeline_tag&expand[]=library_name"
+      "url": "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=1000&expand[]=trendingScore&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=pipeline_tag&expand[]=library_name&expand[]=tags"
     },
     {
       "@type": "Dataset",
@@ -112,7 +112,7 @@
 <body>
 <h1>Hugging Face Adoption History (wss-hugging-face)</h1>
 <p>Point-in-time capture of Hugging Face Hub model adoption metrics (downloads, likes) for the text-generation ecosystem. The public API exposes only rolling windows and running totals; this archive preserves the history the source destroys, with an append-only manifest as the provenance record.</p>
-<p class="cov">History held: <strong>2026-08-31</strong> to <strong>2026-09-08</strong>.</p>
+<p class="cov">History held: <strong>2026-08-31</strong> to <strong>2026-09-15</strong>.</p>
 
 
 <h2>Findings</h2>
@@ -126,8 +126,8 @@
     <figcaption><strong>Most downloaded text-generation models</strong> — Horizontal bar chart of the most downloaded text-generation models on the Hugging Face Hub, trailing 30-day downloads.</figcaption>
   </figure>
   <figure>
-    <a href="charts/papers-in-production.svg"><img src="charts/papers-in-production.svg" alt="Papers that actually shipped" loading="lazy"></a>
-    <figcaption><strong>Papers that actually shipped</strong> — Ranked bar chart of research papers by how many of the top 1,000 Hugging Face models implement them.</figcaption>
+    <a href="charts/papers-in-production.svg"><img src="charts/papers-in-production.svg" alt="House technique or standard" loading="lazy"></a>
+    <figcaption><strong>House technique or standard</strong> — Models citing each paper against distinct publishers citing it.</figcaption>
   </figure>
 
 <h2>What is captured</h2>
@@ -155,7 +155,7 @@
 matching manifest row holds that <code>raw_ref</code> with the URL, the fetch
 timestamp and a SHA-256 of exactly what came back, so any number here traces to
 the bytes it came from.</p>
-<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/q3dresearch/wss-hugging-face">https://github.com/q3dresearch/wss-hugging-face</a>, accessed 2026-09-08.</p>
+<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/q3dresearch/wss-hugging-face">https://github.com/q3dresearch/wss-hugging-face</a>, accessed 2026-09-15.</p>
 
 <footer>
 <p>Repository code and captured data are licensed separately. This dataset is
