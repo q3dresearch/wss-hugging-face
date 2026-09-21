@@ -112,8 +112,10 @@ wrong for counting.
 
 ## Licences
 
-Code MIT; data CC-BY-4.0, citation in [CITATION.cff](CITATION.cff). Captured
-content originates from the Hugging Face Hub API and remains subject to
-[their terms](https://huggingface.co/terms-of-service).
+Code MIT ([LICENSE](LICENSE)). **The data is not CC-BY-4.0** — see
+[LICENSE-DATA](LICENSE-DATA). Captured content is Hub metadata obtained under
+[Hugging Face's terms](https://huggingface.co/terms-of-service), which govern
+use of the platform rather than granting rights over content other people
+uploaded — each model carries its author's own licence. Attribute the model
+authors and the Hub, not this repository.
 
-Topics: `git-scraping` · `open-data` · `point-in-time-data` · `dataset`

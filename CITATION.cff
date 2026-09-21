@@ -13,7 +13,8 @@ authors:
     website: "https://github.com/neldivad"
   - name: "q3dresearch"
     website: "https://github.com/q3dresearch"
-license: CC-BY-4.0
+# No `license:` field: Hub metadata under platform ToS, and each model carries its uploader's own licence
+# The CODE is MIT (see LICENSE); this file cites the DATASET.
 keywords:
   - git-scraping
   - open-data
