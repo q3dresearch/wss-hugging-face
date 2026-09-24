@@ -34,6 +34,11 @@ shipping in 9.
 
 ## Questions this exists to answer
 
+![1 of 6 questions are answered now; 1 wait on the capture; 4 are not on a clock at all.](examples/charts/maturity.svg)
+
+**1 of these 6 are answered from captures already held.** 1 become answerable only as the series lengthens — the plate shows when. The remaining 4 are not on a clock: they need a method, or a field this source does not publish, and waiting produces neither. That distinction is the one a reader cannot make from a table of open questions.
+
+
 A source that answers no question gets dropped. A question nothing answers is
 the next thing to build. Append freely.
 
