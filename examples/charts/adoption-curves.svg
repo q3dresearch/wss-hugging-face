@@ -16,19 +16,19 @@
 <line x1="64.0" y1="212.6" x2="752.0" y2="212.6" stroke="#e1e0d9" stroke-width="1"/>
 <text x="56.0" y="216.1" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#898781" text-anchor="end" font-weight="normal" style="font-variant-numeric: tabular-nums;">100M</text>
 <text x="64.0" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#898781" text-anchor="start" font-weight="normal" style="font-variant-numeric: tabular-nums;">2026-08</text>
-<text x="126.5" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#898781" text-anchor="start" font-weight="normal" style="font-variant-numeric: tabular-nums;">2026-09</text>
+<text x="111.4" y="470.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#898781" text-anchor="start" font-weight="normal" style="font-variant-numeric: tabular-nums;">2026-09</text>
 <line x1="64.0" y1="452.0" x2="752.0" y2="452.0" stroke="#c3c2b7" stroke-width="1"/>
-<polyline points="64.0,252.8 126.5,253.0 157.8,255.4 189.1,254.8 220.4,255.0 282.9,257.8 314.2,257.5" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="752.0" cy="258.4" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
-<polyline points="64.0,227.8 126.5,227.3 157.8,229.2 189.1,227.6 220.4,227.0 282.9,228.4 314.2,227.5" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="752.0" cy="225.2" r="5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
-<polyline points="64.0,274.7 126.5,271.1 157.8,270.8 189.1,267.8 220.4,267.5 282.9,269.6 314.2,268.9" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="752.0" cy="288.6" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
-<polyline points="64.0,115.9 126.5,115.2 157.8,117.2 189.1,115.8 220.4,115.3 282.9,116.8 314.2,115.9" fill="none" stroke="#eda100" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="752.0" cy="116.9" r="5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/>
-<text x="764.0" y="120.4" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">all-MiniLM-L6-v2  251M</text>
-<text x="764.0" y="228.7" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">ms-marco-MiniLM-L6-v2  88.6M</text>
-<text x="764.0" y="261.9" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">bge-small-en-v1.5  64.3M</text>
-<text x="764.0" y="292.1" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">electra-base-discriminator  48.1M</text>
+<polyline points="64.0,252.8 111.4,253.0 135.2,255.4 158.9,254.8 182.6,255.0 230.1,257.8 253.8,257.5" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="752.0" cy="260.2" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<polyline points="64.0,227.8 111.4,227.3 135.2,229.2 158.9,227.6 182.6,227.0 230.1,228.4 253.8,227.5" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="752.0" cy="227.7" r="5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<polyline points="64.0,274.7 111.4,271.1 135.2,270.8 158.9,267.8 182.6,267.5 230.1,269.6 253.8,268.9" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="752.0" cy="292.7" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<polyline points="64.0,115.9 111.4,115.2 135.2,117.2 158.9,115.8 182.6,115.3 230.1,116.8 253.8,115.9" fill="none" stroke="#eda100" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="752.0" cy="120.4" r="5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/>
+<text x="764.0" y="123.9" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">all-MiniLM-L6-v2  242.7M</text>
+<text x="764.0" y="231.2" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">ms-marco-MiniLM-L6-v2  86.5M</text>
+<text x="764.0" y="263.7" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">bge-small-en-v1.5  63.3M</text>
+<text x="764.0" y="296.2" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">electra-base-discriminator  46.3M</text>
 <text x="24.0" y="490.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="10" fill="#898781" text-anchor="start" font-weight="normal" style="">source: wss-hugging-face · hf.models.text-generation · CC-BY-4.0</text>
 </svg>
