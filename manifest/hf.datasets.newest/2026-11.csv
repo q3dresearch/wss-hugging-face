@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+hf.datasets.newest,https://huggingface.co/api/datasets?sort=createdAt&direction=-1&limit=1000&expand[]=downloads&expand[]=likes&expand[]=createdAt&expand[]=tags,2026-11-03T03:42:18Z,200,application/json,329331,0f8dc3b1e9b303cc2db30d9781aed2486f0cad25e03243eecc57729bb8037892,"W/""50673-KnImE+i0vEzlGqiYm79+QXknmAQ""",,changed,raw/hf.datasets.newest/2026/11/20261103T034218Z-0f8dc3b1e9b3.json.gz,,
