@@ -1,2 +1,3 @@
 source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
 hf.papers.daily,https://huggingface.co/api/daily_papers?limit=100,2026-11-03T03:42:21Z,200,application/json,581003,ff72b222d214fea7b6826bad1a478406ff8bd5ecd3b6de48583cf94ebcc8d076,"W/""8dd8b-lAhJVgy5qVsUJSqY78Qhi+mEFiY""",,changed,raw/hf.papers.daily/2026/11/20261103T034221Z-ff72b222d214.json.gz,,
+hf.papers.daily,https://huggingface.co/api/daily_papers?limit=100,2026-11-10T04:18:14Z,200,application/json,605722,7b3c4e44aeac574bcbe04d7763b6054978f9eab345f4cc6cc21020d1dac1d718,"W/""93e1a-pDvqGKltGinf/pWXASiLJP5Lxcs""",,changed,raw/hf.papers.daily/2026/11/20261110T041814Z-7b3c4e44aeac.json.gz,,
